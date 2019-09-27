@@ -23,12 +23,14 @@ header{
   font-family: 'Roboto', sans-serif;
 }
 
+/* Container */
 .container{
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+/* Header */
 .header__top{
   background-color: #303030;
 }
@@ -98,6 +100,7 @@ header{
   justify-content: space-between;
 }
 
+/* Menu */
 .menu li{
   display: inline-block;
 }
@@ -117,4 +120,117 @@ header{
 
 .menu a:hover{
   border-color: #ffc222;
+}
+
+/* Modal */
+#modal{
+  display: none;
+}
+
+/* Slider */
+
+.slider{
+  background-image: url("../img/slider-fon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.slider__item-content{
+  text-align: center;
+  padding-top: 110px;
+  max-width: 665px;
+  margin: 0 auto;
+}
+
+.slider__title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 25px;
+
+}
+
+.slider__text{
+  font-family: 'PT Serif', serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #d3d2d2;
+  margin-bottom: 50px;
+}
+
+.default-btn{
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  padding: 8px 30px 8px 24px;
+  border: 1px solid #ffc222;
+  border-right-width: 20px;
+  position: relative;
+  outline: none;
+}
+
+.default-btn::after{
+  content: "\f105";
+  font-family: 'icomoon';
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  right: -12px;
+}
+
+.slider__inner{
+  position: relative;
+}
+
+/* Slick */
+
+.slick-btn{
+  position: absolute;
+  top: 77%;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+
+  cursor: pointer;
+  outline: none;
+  background-color: #ffc222;
+}
+
+.slick-btn.slick-disabled{
+  cursor: default;
+  background-color: transparent;
+}
+
+.slick-btn::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'icomoon';
+  color: #fff;
+}
+
+.slick-next::before{
+  content: "\f105";
+}
+.slick-next{
+  right: 0;
+}
+
+.slick-prev::before{
+  content: "\f104";
+}
+.slick-prev{
+  left: 0;
 }
