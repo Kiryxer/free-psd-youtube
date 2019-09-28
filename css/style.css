@@ -235,7 +235,7 @@ header{
   left: 0;
 }
 
-/* About */
+/* Services */
 
 .services{
   padding: 50px 0px 30px;
@@ -333,4 +333,39 @@ header{
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #050505;
   margin-right: 60px;
+}
+
+/* About */
+
+.about{
+  background-image: url("../img/about-fon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  padding: 25px 0px 45px;
+}
+
+.about__inner{
+  max-width: 545px;
+}
+
+.about__title{
+  font-size: 24px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 10px 0px 25px;
+  color: #ffffff;
+}
+
+.about__text{
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #d3d2d2;
+  margin-bottom: 30px;
+}
+
+.about__btn.default-btn::after{
+  color: #303030;
 }
