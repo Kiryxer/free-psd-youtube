@@ -706,6 +706,7 @@ header{
 .footer__map{
   padding-top: 10px;
   max-width: 630px;
+  width: 100%;
 }
 
 .footer__info{
@@ -728,10 +729,9 @@ header{
   margin-bottom: 20px;
 }
 
-/* .footer__map iframe{
-  height: 250px;
+.footer__map iframe{
   width: 100%;
-} */
+}
 
 .footer__list{
   padding-top: 10px;
@@ -781,7 +781,28 @@ header{
   color: #fff;
 }
 
+#modal{
+  width: 300px;
+}
+
 #modal input{
   display: block;
   width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding: 0px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+#modal input[type="submit"]{
+  background-color: #ffc222;
+  border: none;
+}
+
+.header__btn-menu{
+  display: none;
+  font-size: 28px;
 }
